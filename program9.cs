@@ -4,32 +4,26 @@ using System;
 
 class Program
 {
-    static void Display()
+    static void display()
     {
-        Console.WriteLine("Display method with no parameters.");
+        Console.WriteLine("Hello!");
     }
 
-    static void Display(int a)
+    static void display(string name)
     {
-        Console.WriteLine("Display method with one integer parameter: " + a);
+        Console.WriteLine("Hello, " + name + "!");
     }
 
-    static void Display(string message)
+    static void display(string name, int age)
     {
-        Console.WriteLine("Display method with one string parameter: " + message);
-    }
-
-    static void Display(int a, int b)
-    {
-        Console.WriteLine("Display method with two integer parameters: " + a + ", " + b);
+        Console.WriteLine("Hello, " + name + "! You are " + age + " years old.");
     }
 
     static void Main(string[] args)
     {
-        Display();
-        Display(10);
-        Display("Hello, World!");
-        Display(5, 15);
+        display();
+        display("Alice");
+        display("Bob", 25);
 
         Console.ReadLine();
     }
